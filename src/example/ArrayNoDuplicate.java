@@ -22,7 +22,7 @@ public class ArrayNoDuplicate {
 		this.array = array;
 	}
 	/**
-	 * @Method: add a number to a list if it is not already present
+	 * @Method: add a number to a list if it isn't already present
 	 * @param number
 	 * @return true if the number is insert else, false
 	 * */

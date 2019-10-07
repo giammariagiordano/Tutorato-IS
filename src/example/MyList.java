@@ -22,7 +22,12 @@ public class MyList {
   public void setList(List<Integer> list) {
     this.list = list;
   }
-  
+  /**
+   * @method: searchNumber: search if the number is present n the list
+   * @param: number: Integer
+   * @return:true if the number was found, else return false
+   * @throws: IllegalArgumentException if the number is null
+   * */
   public boolean searchNumber(Integer number) {
     boolean isFound = false;
     if(number == null)
