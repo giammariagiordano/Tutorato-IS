@@ -1,7 +1,8 @@
-package example;
+package unitTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import example.SearchClass;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 

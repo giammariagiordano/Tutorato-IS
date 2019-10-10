@@ -3,6 +3,7 @@ package unitTest;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeAll;
 import example.ATMCard;
+import org.junit.jupiter.api.Test;
 
 class ATMCardTest {
   static private ATMCard atm;
@@ -11,7 +12,7 @@ class ATMCardTest {
     atm = new ATMCard();
   }
   
-  @org.junit.Test
+  @Test
   void testCase2Dot2() {
     int newPin = 5555;
     atm.changePin(newPin);
