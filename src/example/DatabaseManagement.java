@@ -1,7 +1,7 @@
 package example;
 
-public class DatabaseManagment {
-  public DatabaseManagment() {
+public class DatabaseManagement {
+  public DatabaseManagement() {
   }
     public boolean getConnection() {
         return true;

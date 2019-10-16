@@ -1,18 +1,18 @@
-package unitTest;
+package testing;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import example.Account;
-import example.DatabaseManagment;
+import example.DatabaseManagement;
 
 class AccountTest {
   private  Account account;
-  private static DatabaseManagment db;
+  private static DatabaseManagement db;
 
   @BeforeAll
   static void CreateAccount() {
-    db = new DatabaseManagment();
+    db = new DatabaseManagement();
   }
 
   @Test
@@ -27,4 +27,17 @@ class AccountTest {
       assertFalse(db.login(account));
   }
 
+  @Test
+  void testPasswordFailure() {
+	  account = new Account("V.Rossi@studenti.unisa.it", "1234567");
+      assertFalse(db.login(account));  
+  }
+  
+  @Test
+  void testPasswordAccountFailure() {
+	  account = new Account("V.Ro@studenti.unisa.it", "1234567");
+      assertFalse(db.login(account));  
+  }
+  
+  
 }
