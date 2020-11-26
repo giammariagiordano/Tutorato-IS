@@ -24,11 +24,11 @@ un esempio di equivalence class test (Equivalence Class Esempio.pdf) e un esempi
 ```sh
 git clone https://github.com/broke31/Tutorato-IS.git
 ```
-2. enter in the repo 
+2. Entra nella repo
 ```sh
 cd Tutorato-IS
 ```
-
+oppure importa la repo scaricata all'interno del tuo IDE
 ## Licenza
 
 Distributed under the MIT License. See `LICENSE` for more information.
